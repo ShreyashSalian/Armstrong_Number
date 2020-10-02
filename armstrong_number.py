@@ -1,9 +1,11 @@
-num = int(input("Enter The Number :"))
+num = input("Enter The Number :")
+lenOfNum=len(num)
+num=int(num)
 sum = 0
 temp = num
 while temp > 0:
     digit = temp % 10
-    sum += digit ** 3
+    sum += digit ** lenOfNum
     temp //= 10
 
 if num == sum:
